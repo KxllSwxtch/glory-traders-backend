@@ -32,7 +32,7 @@ HEADERS = {
 }
 
 # Подключаем папку frontend/dist как статические файлы
-app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
+# app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
 
 
 @app.get("/api")
