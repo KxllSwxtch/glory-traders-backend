@@ -35,11 +35,6 @@ HEADERS = {
 # app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="static")
 
 
-@app.get("/api")
-def read_root():
-    return {"message": "Hello from FastAPI"}
-
-
 # Эндпоинт для получения автомобилей с конкретной страницы
 @app.get("/api/proxy/filter/page")
 async def get_cars_page(
