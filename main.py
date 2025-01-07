@@ -77,9 +77,9 @@ async def get_cars_page(
     if yearTwoId:
         params["yearTwo"] = yearTwoId
     if mileageOneId:
-        params["mileageOne"] = mileageOneId
+        params["mileageOneId"] = mileageOneId
     if mileageTwoId:
-        params["mileageTwo"] = mileageTwoId
+        params["mileageTwoId"] = mileageTwoId
 
     try:
         async with httpx.AsyncClient() as client:
